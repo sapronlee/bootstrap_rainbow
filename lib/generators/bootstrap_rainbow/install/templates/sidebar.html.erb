@@ -1,0 +1,36 @@
+<ul id="sidebar-nav">
+  
+  <li class="accordion-group <%%= "#{active_li?(controllers: %w(home), value: 'active')}" %>">
+    <a href="<%%= root_path %>">
+      <span class="icon"><i class="icon-dashboard"></i></span>
+      <span class="text"><span class="title">Dashboard</span></span>
+    </a>
+  </li>
+  
+  <li class="accordion-group <%%= "#{active_li?(controllers: %w(examples), value: 'active')}" %>">
+    <a data-toggle="collapse" data-parent="#sidebar-nav" href="#example">
+      <span class="icon"><i class="icon-magic"></i></span>
+      <span class="text"><span class="title">Examples</span><b class="caret"></b></span>
+    </a>
+    <div id="example" class="collapse <%%= "#{active_li?(controllers: %w(examples), value: 'in')}" %>">
+      <ul>
+        
+        <li class="<%%= "#{active_li?(controllers: %w(example), actions: %w(index), value: 'active')}" %>">
+          <a href="#">
+            <span class="icon"><i class="icon-circle"></i></span>
+            <span class="text">Demo</span>
+          </a>
+        </li>
+        
+        <li class="<%%= "#{active_li?(controllers: %w(example), actions: %w(index), value: 'active')}" %>">
+          <a href="#">
+            <span class="icon"><i class="icon-circle"></i></span>
+            <span class="text">Demo</span>
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+  </li>
+  
+</ul>

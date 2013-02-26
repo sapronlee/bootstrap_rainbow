@@ -1,0 +1,15 @@
+@import "bootstrap/mixins";
+
+@mixin navbar($backgroundColor: #000, $borderColor: #ccc, $startColor: #555, $endColor: #333) {
+  background: $backgroundColor;
+  border-bottom: 1px solid #{$borderColor};
+  @include box-shadow(rgba(255,255,255,0.25) 0 1px 0 inset);
+  @include gradient-vertical($startColor, $endColor);
+}
+
+@mixin text-shadow($shadow...) {
+  -webkit-text-shadow: $shadow;
+  -moz-text-shadow: $shadow;
+  -o-text-shadow: $shadow;
+  text-shadow: $shadow;
+}

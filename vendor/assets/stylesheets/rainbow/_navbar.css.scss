@@ -1,0 +1,62 @@
+.navbar {
+  height: 40px;
+  margin-top: 0px;
+  margin-right: 0px;
+  width: 100%;
+  -webkit-box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.3);
+  background-color: #333;
+  background: image-url('rainbow/navbar-bg.png');
+  border-bottom: 1px solid #292929;
+  a.brand {
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    padding: 0;
+    padding-left: 20px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 39px;
+    text-align: center;
+    color: #222;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 0 30px rgba(255, 255, 255, 0.125);
+    margin-left: 0;
+    &:hover, &:active, &.active {
+      color: #fff;
+    }
+  }
+  .nav {
+    &.pull-right {
+      margin-right: 20px;
+    }
+    & > li > a {
+      text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+      &:focus, &:hover {
+        color: #fff;
+      }
+    }
+    .user-menu {
+      img {
+        display: inline-block;
+        height: 20px;
+        vertical-align: top;
+        width: 20px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        -webkit-box-shadow: rgba(0,0,0,0.2) 0 -1px 0;
+        -moz-box-shadow: rgba(0,0,0,0.2) 0 -1px 0;
+        box-shadow: rgba(0,0,0,0.2) 0 -1px 0;
+      }
+      .name {
+        padding-left: 5px;
+      }
+      .dropdown-toggle .caret {
+        border-top-color: #aaa;
+        border-bottom-color: #aaa;
+      }
+    }
+  }
+}
