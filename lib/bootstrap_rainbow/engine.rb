@@ -1,11 +1,13 @@
+require 'rails'
+
 require 'bootstrap_rainbow/breadcrumbs.rb'
 
 module BootstrapRainbow
   class Engine < ::Rails::Engine
     
-    initializer 'twitter-bootstrap-rails.setup_helpers' do |app|
+    initializer 'bootstrap-rainbow.setup' do |app|
       app.config.to_prepare do
-        ActionController::Base.send :include, Breadcrumbs
+        ActionController::Base.send :include, BootstrapRainbow::Breadcrumbs
       end
     end
     

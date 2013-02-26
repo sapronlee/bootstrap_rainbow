@@ -60,6 +60,7 @@
   $(document).on('click.shrink.data-api', '[data-toggle="shrink"]', function (e) {
     var $btn = $(this)
     $btn.shrink('shrink')
+    return false
   })
   
 }(window.jQuery);
